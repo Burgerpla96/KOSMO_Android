@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--컨텍스트 메뉴에서 app:showAsAction 및 icon 속성은 적용 안된다.-->
+    <item android:id="@+id/degree_rotate" android:title="90도 회전" />
+    <item android:id="@+id/scale_inc" android:title="2배 확대" />
+    <item android:id="@+id/scale_desc" android:title="2배 축소" />
+</menu>

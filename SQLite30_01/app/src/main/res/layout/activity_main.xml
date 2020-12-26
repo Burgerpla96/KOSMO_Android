@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    ​
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="createDatabase"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="데이타베이스 생성"/>
+        <EditText
+            android:hint="데이타베이스명 입력!!"
+            android:id="@+id/editdatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="createTable"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="테이블 생성"/>
+        <EditText
+            android:hint="테이블명 입력!!"
+            android:id="@+id/edittable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="insert"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="데이타 입력"/>
+        <EditText
+            android:hint="이름 입력!!"
+            android:id="@+id/editinsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:onClick="select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="데이타 조회"/>
+    <TextView
+        android:id="@+id/tvresult"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30sp"
+        />
+
+</LinearLayout>

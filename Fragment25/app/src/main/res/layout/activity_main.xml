@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!--XML로 프래그먼트 붙이기:fragment태그 사용
+        ※태그 사용시 프래그먼트의 레이아웃이 그대로 해당위치에
+        붙여넣기 한거와 같다
+        -->
+
+        <!-- 내부 정적 클래스 인 경우 -->
+        <!--
+        fragment 태그로 붙이기
+        class속성:패키지명.외부클래스명$내부클래스명
+
+        ※반드시 id속성 추가(사용 안하더라도)해야
+        ANR(Application Not Responding)발생하지 않는다!!!
+        -->
+
+
+<!--        <fragment-->
+<!--            android:id="@+id/topFragment"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            class="com.kosmo.fragment25.MainActivity$TopFragment" />-->
+
+
+        <!-- 별도의 외부 클래스로 구성한 경우 -->
+        <!-- class속성:패키지명.클래스명
+        ※반드시 id속성 추가(사용 안하더라도)해야
+        ANR(Application Not Responding)발생하지 않는다
+        -->
+        ​
+
+        <fragment
+            android:id="@+id/topFragment"
+            class="com.kosmo.fragment25.TopFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <!--자바코드로 프래그먼트 붙이기:프레먼트를 붙일 영역 확보-->
+    <!--아래 레이아웃 영역을 프래그먼트로 대체 예정-->
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal"></LinearLayout>
+</LinearLayout>

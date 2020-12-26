@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기본 버튼"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="샐랙터 버튼(image)"
+        android:background="@drawable/button_image_selector"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_color_selector"
+        android:text="샐랙터 버튼(색상)"/>
+
+    <!--입력한 문자열의 길이 출력을 하기위한 텍스트뷰-->
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/textview"
+        android:background="#00ff00"
+        android:text="여기에 문자열 길이 표시"
+        />
+    <!-- 시스템에서 제공하는 기본 에디트 텍스트-->
+    <EditText
+        android:id="@+id/basic_edittext"
+        android:hint="기본 에디트 텍스트"
+        android:textColorHint="#00ff00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--내가 만든 커스텀 EditText-->
+    <!-- 아래 주석처리후 자바코드에서 직접 new로 생성-->
+    ​
+
+    <com.kosmo.customview10_03.EditTextByMe
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="커스텀 뷰"
+        android:id="@+id/editTextMe"
+        />
+
+
+</LinearLayout>

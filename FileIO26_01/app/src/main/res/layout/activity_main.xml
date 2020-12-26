@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.kosmo.fileio26_01.MainActivity">
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="여기에 파일 내용이 뿌려져요!"
+        android:lines="3" />
+    <!-- onClick속성은 버튼 위젯에만 적용가능
+    id속성 불필요
+    Mainactivity에서는 onClick속성에 지정한
+    메소드만 정의하면 됨.
+    -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="fileWriterInMemory"
+        android:text="파일쓰기(내장메모리)" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="fileReaderInMemory"
+        android:text="파일읽기(내장메모리)" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="fileReaderInRaw"
+        android:text="파일읽기(res/raw-읽기전용)" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="fileWriterInSD"
+        android:text="파일쓰기(외부저장소-SD카드)" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="fileReaderInSD"
+        android:text="파일읽기(외부저장소-SD카드)" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dirMakeInMemory"
+        android:text="디렉토리 생성(내장메모리)" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dirMakeInSD"
+        android:text="디렉토리 생성(외부저장소-SD카드)" />
+</LinearLayout>

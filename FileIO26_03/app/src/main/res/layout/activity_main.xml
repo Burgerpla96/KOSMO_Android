@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.kosmo.fileio26_03.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="previous"
+            android:text="이전" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="next"
+            android:text="다음" />
+    </LinearLayout>
+    <!-- 자바코드로 커스텀뷰 생성시 주석-->
+        <com.kosmo.fileio26_03.view.CustomView
+            android:id="@+id/customview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+</LinearLayout>
+

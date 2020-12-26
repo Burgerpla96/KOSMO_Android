@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#778899"
+            android:textSize="20sp"
+            android:text="리니어레이아웃"/>
+        <!--LinearLayout 사용-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="아 이 디"
+                    android:textSize="18sp"
+                    android:gravity="right"
+                    android:layout_marginRight="5dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="아이디를 입력하세요?"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호"
+                    android:textSize="18sp"
+                    android:gravity="right"
+                    android:layout_marginRight="5dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="비밀번호를 입력하세요?"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="확인"/>
+                <Button
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="취소"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#778899"
+            android:textSize="20sp"
+            android:text="테이블레이아웃"/>
+        <!--TableLayout 사용-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:stretchColumns="*">
+            <TableRow >
+                <TextView android:text="아 이 디" android:textSize="18sp" android:gravity="right" android:paddingRight="10dp"/>
+                <EditText android:hint="아이디를 입력하세요?" android:layout_span="9" android:id="@+id/username"/>
+            </TableRow>
+            <TableRow >
+                <TextView android:text="비 밀 번 호" android:textSize="18sp" android:gravity="right" android:paddingRight="10dp"/>
+                <EditText android:hint="비밀번호를 입력하세요?" android:layout_span="9" android:inputType="textPassword" android:id="@+id/password"/>
+            </TableRow>
+            <TableRow >
+                <Button android:text="확인" android:layout_column="8" android:id="@+id/btnOk"/>
+                <Button android:text="취소" android:layout_column="9" android:layout_marginLeft="5dp" android:id="@+id/btnCancel"/>
+            </TableRow>
+        </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#778899"
+            android:textSize="20sp"
+            android:text="그리드레이아웃"/>
+        <!--GridLayout 사용-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="3"
+            android:columnCount="10"
+            android:padding="10dp"
+            >
+            <TextView android:text="아 이 디" android:textSize="18sp" android:layout_width="100dp" android:gravity="right" android:layout_marginRight="5dp"/>
+            <EditText android:hint="아이디를 입력하세요?" android:layout_columnSpan="9"  android:layout_gravity="fill_horizontal" />
+            <TextView android:text="비밀번호" android:textSize="18sp" android:layout_width="100dp" android:gravity="right" android:layout_marginRight="5dp"/>
+            <EditText android:hint="비밀번호를 입력하세요?" android:layout_columnSpan="9" android:layout_gravity="fill_horizontal"/>
+            <Button android:text="확인" android:layout_row="2" android:layout_column="8" android:layout_marginRight="5dp"/>
+            <Button android:text="취소" android:layout_row="2" android:layout_column="9" />
+        </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#778899"
+            android:textSize="20sp"
+            android:text="상대적레이아웃"/>
+        <!--RelativeLayout 사용-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+
+                android:text="아 이 디"
+                android:textSize="18sp"
+                android:gravity="right|center_vertical"
+                android:id="@+id/id"
+                android:layout_marginRight="5dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:hint="아이디를 입력하세요?"
+                android:layout_toRightOf="@id/id"
+                android:id="@+id/edtid"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+
+                android:text="비밀번호"
+                android:textSize="18sp"
+                android:gravity="center_vertical|right"
+                android:layout_below="@id/id"
+                android:layout_marginRight="5dp"
+                android:id="@+id/pwd"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="비밀번호를 입력하세요?"
+                android:layout_below="@id/edtid"
+                android:layout_toRightOf="@id/pwd"
+                android:id="@+id/edtpwd"
+                />
+
+            <Button
+                android:id="@+id/btnCan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtpwd"
+                android:layout_alignRight="@id/edtpwd"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-79dp"
+                android:layout_marginRight="73dp"
+                android:text="취소" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtpwd"
+                android:layout_marginTop="-79dp"
+                android:layout_marginRight="183dp"
+
+                android:layout_toLeftOf="@id/btnCan"
+                android:text="확인" />
+        </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

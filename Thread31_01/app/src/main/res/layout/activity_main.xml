@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.kosmo.thread31_01.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="스레드사용[UI스레드에서 증가값 변경]"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvMainNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="#ff0000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvThreadNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="#00ff00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvRunnableNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="#0000ff"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="thread"
+            android:text="Thread상속"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="runnable"
+            android:text="Runnable상속" />
+    </LinearLayout>
+</LinearLayout>

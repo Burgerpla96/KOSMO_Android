@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:background="@android:color/black"
+    >
+    <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:src="@drawable/icon2"
+        android:scaleType="fitXY"
+        />
+    <!--  android:scaleType="fitXY" 하면
+    layout_width에 맞춰서 크기가 정해진다.
+    -->
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+    <!--
+    -글자가 많을 때, ...표시
+    android:singleLine="true" dprecated됨
+    android:maxLines="1" :한줄만 표시
+    ellipsize:Text가 TextView를 넘어갔을 때 표시할 방법을 설정
+    ellipsize = "end" - 뒷 부분을 ...으로 표시
+
+
+    -앞이나 중간에 ...표시 쓸일이 거의 없다.
+    아래는 maxLines와 함께쓰면 빨간줄 :tools:ignore="EllipsizeMaxLines" 추가시 제거됨
+    ellipsize = "none" - ... 없이 뒷 부분 잘라서 표시 (기본)
+    ellipsize = "start" - 앞 부분을 ...으로 표시
+    ellipsize = "middle" - 중간 부분을 ...으로 표시
+    ellipsize = "marquee" - 흐르는 텍스트 효과
+    아래 세줄과 자바코드에서 textView.setSelected(true)추가하면 marquee가 적용됨
+    android:ellipsize="marquee"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:singleLine="true"
+    -->
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="games">
+        <item>소닉</item>
+        <item>마리오</item>
+        <item>커비</item>
+        <item>젤다</item>
+        <item>포켓몬</item>
+    </string-array>
+
+</resources>

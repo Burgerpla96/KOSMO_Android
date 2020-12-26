@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:padding="10dp"
+    android:rowCount="10">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/rb1"
+        android:layout_height="50dp"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/rb2"
+        android:layout_height="50dp"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/rb3"
+        android:layout_height="50dp"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/rb4"
+        android:layout_height="50dp"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/rb5"
+        android:layout_height="50dp"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/rb6"
+        android:layout_height="50dp"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/rb7"
+        android:layout_height="50dp"
+        android:numStars="5"
+        android:stepSize="1"
+
+        />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/rb8"
+        android:layout_height="50dp"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/rb9"
+        android:layout_height="50dp"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:text="돌아가기" />
+</GridLayout>

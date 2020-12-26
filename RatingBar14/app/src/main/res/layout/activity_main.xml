@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+    <!-- stepSize디폴트값:0.5
+    안드로이드에서 제공하는 스타일중에서 ratingBarStyleIndicator은
+    터치시 rating이 적용 안됨.자바코드로만 rating설정할 수 있다
+    -->
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stepSize="1"
+        android:id="@+id/ratingbar1"
+        />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="7"
+        android:rating="2"
+        android:id="@+id/ratingbar2"
+        />
+    <!--  android:numStars="7"로 별의 개수를 설정
+    android:rating="2" 으로 초기 별의 개수를 설정
+    android:stepSize="1" 로 늘어나는 별의 정도를 설정(default가 0.5)
+    -->
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stepSize="1.5"
+        android:rating="1.5"
+        android:id="@+id/ratingbar3"
+        style="?android:attr/ratingBarStyleIndicator"
+    />
+    <!--
+    style="@android:style/Widget.Material.RatingBar.Small"
+    -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_inc"
+        android:text="증가"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_desc"
+        android:text="감소"/>
+</LinearLayout>

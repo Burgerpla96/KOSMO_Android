@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Menu 1"
+            android:id="@+id/btnFrame1"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/button"
+            android:textColor="#5C5C5C"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Menu 2"
+            android:id="@+id/btnFrame2"
+            android:backgroundTint="@color/button"
+            android:textColor="#5C5C5C"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Menu 3"
+            android:id="@+id/btnFrame3"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/button"
+            android:textColor="#5C5C5C"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DA8B15"
+        android:id="@+id/frameLayout">
+        <!--첫 번째 화면-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/frame1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="첫 번째 화면 입니다."
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="*"
+                android:padding="10dp"
+                >
+                <TableRow>
+                    <TextView android:text="ID :" android:textSize="18sp" android:gravity="right" />
+                    <EditText android:hint="아이디를 입력하세요" android:layout_span="10"
+                        android:id="@+id/username"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Password :" android:textSize="18sp"  android:gravity="right" />
+                    <EditText android:hint="비밀번호를 입력하세요" android:layout_span="10"
+                        android:inputType="textPassword" android:id="@+id/password"/>
+                </TableRow>
+                <TableRow>
+                    <Button android:text="확인" android:layout_column="9" android:id="@+id/btnOk" />
+                    <Button android:text="취소" android:layout_column="10" android:layout_marginLeft="5dp"
+                        android:id="@+id/btnCancel"/>
+                </TableRow>
+            </TableLayout>
+       </LinearLayout>
+
+        <!--두 번째, 세 번째 화면-->
+        <!--방법 1일때  android:visibility="invisible" 이용-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DA8B15"
+            android:text="두 번째 화면입니다."
+            android:textColor="@color/black"
+            android:id="@+id/frame2"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DA8B15"
+            android:text="세 번째 화면입니다."
+
+            android:textColor="#5C5C5C"
+            android:id="@+id/frame3"/>
+    </FrameLayout>
+
+</LinearLayout>

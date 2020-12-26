@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF00"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <!--
+        gravity는 해당 뷰의 컨텐츠 정렬
+        layout_gravity 는 해당 뷰가 배치된 레이아웃(부모)을 기준으로 정렬
+        -->
+        <Button
+            android:text="버튼1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            />
+        <Button
+            android:gravity="left|center_vertical"
+            android:text="버튼2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ff0000"
+        android:orientation="horizontal"
+        >
+        <!--정렬 없을 때는 왼쪽 기준 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button1"
+            android:layout_gravity="center"
+            />
+        <!--bottom 은 적용이 안된다.
+        layout 이 vertical 일때, layout 기준 세로 정렬은 안된다.
+        layout 이 horizontal일때, layout 기준 가로 정렬 안된다.
+        -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button2"
+            android:layout_gravity="bottom"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#00ff00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="텍스트 뷰1"
+            android:textSize="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="텍스트 뷰2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="텍스트 뷰3"
+            android:textSize="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ffff"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        >
+        <!--
+        margin은 바깥과의 거리
+        padding은 컨텐츠와의 거리
+        -->
+        <!--
+        orientation 이 vertical 일때: layout_height를 0dp
+        orientation 이 horizontal 일때: layout_width를 0dp
+        -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="버튼1"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="버튼2"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="버튼3"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#889977"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="버튼1"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="버튼2"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="버튼3"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+</LinearLayout>

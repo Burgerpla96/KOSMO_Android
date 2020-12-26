@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context="com.kosmo.thread31_03.MainActivity">
+    ​
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ProgressBar연습" />
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="20"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+    <Button
+        android:onClick="increase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10씩증가"/>
+    <Button
+        android:onClick="decrease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10씩감소"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SeekBar연습" />
+    <TextView
+        android:id="@+id/seektext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="10"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AsyncTask 연습"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/asynctext1"
+        android:text="1번 진행율"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:id="@+id/asyncseekbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="10"
+    />
+    <TextView
+        android:id="@+id/asynctext2"
+        android:text="2번 진행율"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:id="@+id/asyncseekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="15"
+        />
+    <Button
+        android:onClick="start"
+        android:text="스레드시작(AsyncTask)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="stop"
+        android:text="스레드중지(AsyncTask)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

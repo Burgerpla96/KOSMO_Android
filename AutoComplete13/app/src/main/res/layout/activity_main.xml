@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="자동완성 텍스트 뷰(싱글)"
+        android:completionHint="하나를 선택하세요?"
+        android:completionThreshold="2"
+        android:id="@+id/single_auto"
+        />
+    <MultiAutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="자동완성 텍스트 뷰(멀티)"
+        android:completionHint="여러개 중 하나를 선택하세요?"
+        android:completionThreshold="1"
+        android:id="@+id/multi_auto"
+        />
+    <!--completionThreshold 로 준 숫자만큼에서 자동완성이 뜬다.-->
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context="com.kosmo.chronometer11_02.MainActivity">
+    <!-- chronometer는 안드로이드에서 사용하는 아이디 고로
+    id로 설정하지 말아라
+    -->
+    <Chronometer
+    android:id="@+id/timer_chronometer"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#ff0000"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/timeset_button"
+        android:text="시간설정"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/dateset_button"
+        android:text="날짜설정"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textview"
+            android:text="타이머"
+            android:textSize="50sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            />
+        <Button
+            android:id="@+id/stop_button"
+            android:text="중지"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview"
+            android:layout_alignRight="@id/textview"
+            />
+        <Button
+            android:id="@+id/start_button"
+            android:text="시작"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/stop_button"
+            android:layout_below="@id/textview"
+            />
+    </RelativeLayout>
+</LinearLayout>

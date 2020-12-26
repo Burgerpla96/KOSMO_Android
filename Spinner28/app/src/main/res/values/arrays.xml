@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movies">
+        <item>브레이브 하트</item>
+        <item>반지의 제왕</item>
+        <item>잔다르크</item>
+        <item>범죄도시</item>
+        <item>다크나이트</item>
+        <item>친구</item>
+    </string-array>
+
+</resources>

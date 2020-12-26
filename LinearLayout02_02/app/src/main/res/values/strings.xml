@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LinearLayout02_02</string>
+    <string name="button2">It is Second Button!!!</string>
+    <!--R 객체의 Integer상수값으로 저장된다.-->
+</resources>

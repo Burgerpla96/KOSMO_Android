@@ -1,0 +1,43 @@
+package com.kosmo.intent24_02;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ForResultActivity2 extends AppCompatActivity {
+    //result code
+    //오류 코드
+    public static final int RESULT_CODE_TEST = 1000;
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.forresult_layout2);
+
+        //전달된 Intent받기
+        Intent intent = getIntent();
+        //넣는것은 putExtra()로 통일, 받는 메서드는 getXXXExtra()
+        String user = intent.getStringExtra("user");
+        String pass = intent.getStringExtra("pass");
+        //TextView 에 얻어온 값 표시하기
+        ((TextView)findViewById(R.id.textStartActivityForResult2))
+                .setText(String.format("아이디: %s, 비밀번호: %s",user,pass));
+
+        findViewById(R.id.btnStartActivityForResultFinish2) .setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent.putExtra("TEST","요청코드 추가 테스트");
+                setResult(RESULT_CODE_TEST,intent);
+                finish();
+            }
+        });
+
+
+
+    }//////onCreate
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.kosmo.compoundbutton12.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+
+
+            android:id="@+id/check_politics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정치" />
+
+        <CheckBox
+            android:id="@+id/check_economics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="경제" />
+
+        <CheckBox
+            android:id="@+id/check_entertainments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="연예" />
+
+        <CheckBox
+            android:id="@+id/check_sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스포츠" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--RadioGroup 으로 묶어야 하나만 선택된다.-->
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남성" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="여성" />
+
+            <RadioButton
+                android:id="@+id/radio_trans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="트랜스젠더" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/togglebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="토글버튼(표시안됨)"
+        android:textOff="OFF"
+        android:textOn="ON" />
+
+    <Switch
+        android:id="@+id/switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="블루투스"
+        android:textOff="오프(표시안됨)"
+        android:textOn="온(표시안됨)" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff00"
+        android:lineSpacingExtra="5dp"
+        android:padding="10dp" />
+    <!--줄 간격을  android:lineSpacingExtra="10dp"로 준다.-->
+
+</LinearLayout>

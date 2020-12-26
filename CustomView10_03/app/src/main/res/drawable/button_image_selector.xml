@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--순서가 중요하다!
+defalut 이미지는 항상 맨 마지막
+press는 enabled보다 먼저 기술되어야 한다.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/press1_button" android:state_pressed="true"/>
+    <item android:drawable="@drawable/press2_button" android:state_pressed="true"/>
+    <!--
+    <item android:drawable="@drawable/enabled_button" android:state_enabled="true"/>
+    -->
+    <item android:drawable="@drawable/default_button"/>
+</selector>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">리소스 사용하기</string>
+    <string name="xmlMessage">xml에서 리소스 참조</string>
+    <string name="codeMessage"> java코드로 리소스 참조</string>
+    <string name="buttonText">배열 출력하기</string>
+    <string-array name="imageFor">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

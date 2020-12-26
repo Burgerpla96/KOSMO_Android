@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- TableLayout
+    각 컬럼에 배치된 위젯 가로세로 지정시... cell 안에서의 기준으로 배치된다.
+    엑셀처럼  모든 행의 컬럼들이 설정한 가로폭으로 변경된다.
+    앞의 cell 비율이 변화하지는 않는다.
+    행의 세로폭 지정시, 같은 열의 cell이 변하지 않는다.
+    -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="#ff0000"
+        >
+        <TableRow android:background="#00ffff">
+            <Button android:text="1행 1열" android:layout_margin="5dp"/>
+            <Button android:text="1행 2열" android:layout_margin="5dp"/>
+            <Button android:text="1행 3열" android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+            <Button android:text="2행 1열" android:layout_margin="5dp" android:layout_width="100dp"
+                android:height="70dp"/>
+            <Button android:text="2행 2열" android:layout_margin="5dp"
+                android:layout_height="match_parent"/><!--match_parent가 높이에 적용-->
+            <Button android:text="2행 3열" android:layout_margin="5dp"
+                android:layout_width="match_parent"/><!--match_parent가 가로에 적용, cell칸에 꽉참-->
+        </TableRow>
+        <TableRow android:background="#678444">
+            <Button android:text="3행 1열" android:layout_margin="5dp"/>
+            <Button android:text="3행 2열" android:layout_margin="5dp"
+                android:layout_width="120dp" android:layout_height="70dp"/>
+            <Button android:text="3행 3열" android:layout_margin="5dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ff00"
+        android:stretchColumns="*"
+        >
+        <!--
+        -stretchColums하면 부모영역을 전부 차치하도록 늘려준다.
+        -*로 하면 모든 Table Row가 1:1 비율로 늘어난다.
+        -인덱스로 늘려 줄 수 있다. (인덱스는 0부터 시작)
+        -->
+        <TableRow>
+            <Button android:text="1행 1열" android:layout_margin="5dp"/>
+            <Button android:text="1행 2열" android:layout_margin="5dp"/>
+            <Button android:text="1행 3열" android:layout_margin="5dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:stretchColumns="1"
+        >
+        <TableRow>
+            <Button android:text="1행 1열" android:layout_margin="5dp"/>
+            <Button android:text="1행 2열" android:layout_margin="5dp"/>
+            <Button android:text="1행 3열" android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+            <Button android:text="2행 1열" android:layout_margin="5dp"
+                android:layout_span="2"/>
+            <!--layout_span = "합칠 갯수": 열을 합친다.-->
+            <Button android:text="2행 2열" android:layout_margin="5dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEB3B"
+        android:stretchColumns="1"
+        >
+        <TableRow>
+            <Button android:text="1행 1열" android:layout_margin="5dp"/>
+            <Button android:text="1행 2열" android:layout_margin="5dp"/>
+            <Button android:text="1행 3열" android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+            <Button android:text="2행 1열" android:layout_margin="5dp"
+                android:layout_column="2"/>
+            <!--  android:layout_column: 배치할 인덱스를 준다.-->
+            <Button android:text="2행 2열" android:layout_margin="5dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        android:padding="10dp"
+        >
+        <TableRow>
+            <TextView android:text="ID :" android:textSize="18sp" android:gravity="right" />
+            <EditText android:hint="아이디를 입력하세요" android:layout_span="10"
+                android:id="@+id/username"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Password :" android:textSize="18sp"  android:gravity="right" />
+            <EditText android:hint="비밀번호를 입력하세요" android:layout_span="10"
+                android:inputType="textPassword" android:id="@+id/password"/>
+        </TableRow>
+        <TableRow>
+            <Button android:text="확인" android:layout_column="9" android:id="@+id/btnOk" />
+            <Button android:text="취소" android:layout_column="10" android:layout_marginLeft="5dp"
+                android:id="@+id/btnCancel"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!--프래그먼트 전환용-->
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tabLayout"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#ff0000"
+            app:tabMode="fixed"
+
+            />
+
+        <!--
+        com.google.android.material.tabs.TabLayout 은
+        Design tab에서 TabLayout 클릭해서 가져온다.
+
+        -app:tabGravity="center" 로 tab 메뉴 가운데에 모은다.
+           "start"도 모이고, default인 fill은 탭의 너비를 동일한 간격으로 설정한다.
+        -app:tabMode="fixed" : tab늘어도 scroll이 안생긴다.
+        -app:tabIndicatorColor="#ff0000": tab의 밑줄 색
+        -app:tabIndicatorHeight : 탭 하단의 인디케이터 높이를 설정
+        -app:tabSelectedTextColor : 탭이 선택됐을 때 글자 색 설정.
+
+        -->
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewpager"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

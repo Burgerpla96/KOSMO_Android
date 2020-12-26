@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btndial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="전화걸기!" />
+
+    <Button
+        android:id="@+id/btnweb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="웹사이트 열기" />
+
+    <Button
+        android:id="@+id/btnmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="구글맵 열기" />
+
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="구글 검색하기" />
+
+    <Button
+        android:id="@+id/btnsms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문자 보내기" />
+</LinearLayout>

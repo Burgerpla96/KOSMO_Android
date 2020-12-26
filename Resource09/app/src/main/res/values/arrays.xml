@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--int 형 배열-->
+    <integer-array name="intArray">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </integer-array>
+    <!--String array-->
+    <string-array name="stringArray">
+        <item>한라산</item>
+        <item>지리산</item>
+        <item>설악산</item>
+        <item>치악산</item>
+    </string-array>
+
+</resources>

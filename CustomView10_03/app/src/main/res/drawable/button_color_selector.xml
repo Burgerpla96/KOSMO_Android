@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/myred" android:state_pressed="true"/>
+
+    <item android:drawable="@color/black"/>
+    <!--버튼에 색변경이 안된다. 테마가 색을 먹는다.-->
+    <!--AndroidManifext.xml에서
+    android:theme="@style/Theme.AppCompat"계열로 바꾸면 테마 컬러를 안 먹고
+    색 변경이 된다.-->
+</selector>

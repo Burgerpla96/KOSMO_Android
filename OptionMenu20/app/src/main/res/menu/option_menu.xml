@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- xmlns 는 namespace
+ xmlns:app="http://schemas.android.com/apk/res-auto" 추가했다.
+-->
+
+<!--※2.2 이상일 경우 app:showAsAction 사용.
+android접두어는 안드로이드 os에 있는 라이브러리 사용.
+app접두어은 어플에 있는 라이브러리를 사용한다는 의미
+app:showAsAction="never" :액션 바에 보이지 않고 옵션메뉴(...)에표시됨.
+app:showAsAction="always":항상 액션바에 메뉴가 표시됨.
+    단,icon과title이 동시에 설정시 icon우선 icon이 없는경우 title이 표시됨
+app:showAsAction = "always|withText": 공간의 여유가 있으면 텍스트도 함께 표시
+app:showAsAction = "ifRoom" : 메뉴를 보여줄 수 있는 여유공간이 있을 때만액션바에 아이콘 표시
+
+※always,never,ifRoom는 서로 조합불가.
+왜냐하면 서로 배타적이기때문.. 디폴트는 never로 액션바가 아닌 옵션메뉴(...)에
+나타나고옵션메뉴에는 아이콘이 표시되지 않은다옵션메뉴
+- 하나의 액티비티는 하나의 옵션매뉴를 가질 수 있다컨텍스트 메뉴 - 특정 뷰를 길게 누르면 화면에 나타난다.
+ 뷰 객체마다 이 메뉴를 달 수 있다 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/opt_menu1"
+        android:title="옵션 메뉴1"
+        android:icon="@drawable/busy"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/opt_menu2"
+        android:title="옵션 메뉴2"
+        android:icon="@drawable/away"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/opt_menu3"
+        android:title="옵션 메뉴3"
+        android:orderInCategory="3"
+        app:showAsAction="always|withText"
+        />
+    <!--action bar에는 text보다 이미지가 우선해서 나타난다.
+     app:showAsAction="always" 로 표시
+
+    -->
+    <item
+        android:id="@+id/menuitem_red"
+        android:title="RED"
+        android:icon="@drawable/offline"
+        android:orderInCategory="4"
+        />
+    <item
+        android:id="@+id/menuitem_green"
+        android:title="GREEN"
+        android:orderInCategory="5"
+        />
+    <item
+        android:id="@+id/menuitem_blue"
+        android:title="BLUE"
+        android:orderInCategory="6"
+        />
+    <item
+        android:id="@+id/menuitem_submenu"
+        android:title="이미지 변환"
+        android:orderInCategory="7" >
+        <menu>
+            <item android:title="90도 회전" android:id="@+id/degree_rotate"/>
+            <item android:title="2배 확대" android:id="@+id/scale_inc"/>
+            <item android:title="2배 축소" android:id="@+id/scale_desc"/>
+        </menu>
+    </item>
+
+</menu>

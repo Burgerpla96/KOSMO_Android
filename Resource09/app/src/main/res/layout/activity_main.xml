@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layoutpadding"
+    tools:context="com.kosmo.resource09.MainActivity">
+
+    <!-- res폴더의 리소스를 xml속성값으로 설정-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xmlMessage"
+        android:textSize="@dimen/xmlDimen"
+        android:textColor="@color/xmlColor"
+        />
+    <ImageView
+        android:src="@drawable/picture_emergency"
+        android:layout_width="250px"
+        android:layout_height="250px"
+       />
+    <!--res폴더의 리소스를 자바코드로 적용-->
+    <TextView
+        android:id="@+id/code_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:id="@+id/code_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:text="@string/buttonText"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
+

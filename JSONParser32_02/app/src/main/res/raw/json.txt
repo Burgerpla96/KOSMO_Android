@@ -1,0 +1,9 @@
+{"members":
+    [
+    {name:"김길동",age:20,hobbys:["등산","요리"],login:{user:"KIM",pass:"1234"}},
+    {name:"박길동",age:18,hobbys:["영화감상","낚시"],login:{user:"PARK",pass:"5678"}},
+    {name:"이길동",age:30,hobbys:["낚시","요리","여행"],login:{user:"LEE",pass:"LEE1234"}},
+    {name:"최길동",age:40,hobbys:["서핑"],login:{user:"CHOI",pass:"CHOI5678"}},
+    {name:"고길동",age:50,hobbys:["독서","주식","요리","낚시"],login:{user:"GO",pass:"9999"}}
+    ]
+}

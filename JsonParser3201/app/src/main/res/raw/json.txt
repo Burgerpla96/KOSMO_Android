@@ -1,0 +1,7 @@
+{
+    name:'코스모',
+    age:20,
+    hobbys:["등산","낚시","축구"],
+    login:{user:"kim",pass:'1234'}
+
+}
